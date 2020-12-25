@@ -1,0 +1,32 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.delete{
+    background-image:url(./images/delete.svg) ;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+span{
+    width: 200px;
+    font-size: 1.25em;
+    display: inline-block;
+    position: absolute;
+    left: 90px;
+
+
+}
+li{
+    list-style: none;
+    /* display: flex; */
+
+}
+.btn{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    background: none;
+    border: none;
+    margin-top: 5px;
+}
