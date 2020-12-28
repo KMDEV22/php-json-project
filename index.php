@@ -12,7 +12,8 @@
         echo '<link rel ="stylesheet" href="./style.css">';
         echo '<ul>';
         foreach(json_decode($filecontents)->maharastra as $st){
-            echo "<li><form action='delete.php' method='POST'><span>$st</span><input name=\"state".$ctr++."\" value=\"$st\" type=\"hidden\"><button class='btn'><i  class='delete'></i></button></form></li>";
+            $ctr++;
+            echo "<li><span>$st</span><form action='edit.php' method='POST'><input name=\"state".$ctr."\" value=\"$st\" type=\"hidden\"><button class='btn'><i class='edit'></i></button></form><form action='delete.php' method='POST'><input name=\"state".$ctr."\" value=\"$st\" type=\"hidden\"><button class='btn'><i  class='delete'></i></button></form></li>";
         }
         echo '</ul>';
         echo "$filecontents";

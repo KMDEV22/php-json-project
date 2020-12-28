@@ -2,24 +2,40 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
+i{
+    margin-top: 5px;
+}
+li{
+    list-style: none;
+    border-bottom: 1px solid lightgrey;
+}
+
+li form{
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+
+}
+
+button i.edit{
+    background-image: url(./images/edit.svg);
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+
+}
 .delete{
     background-image:url(./images/delete.svg) ;
     width: 32px;
     height: 32px;
     display: inline-block;
 }
-span{
+li span{
     width: 200px;
     font-size: 1.25em;
     display: inline-block;
-    position: absolute;
     left: 90px;
 
-
-}
-li{
-    list-style: none;
-    /* display: flex; */
 
 }
 .btn{
@@ -29,4 +45,5 @@ li{
     background: none;
     border: none;
     margin-top: 5px;
+    display: inline-flex;
 }
